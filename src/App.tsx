@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Header, Footer } from "../index";
+import { Header, Footer } from "./exports";
 
 import "cirrus-ui";
 
