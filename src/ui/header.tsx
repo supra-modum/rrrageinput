@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "cirrus-ui";
 
 export const Header: React.FC = () => {
@@ -6,14 +8,14 @@ export const Header: React.FC = () => {
 
   return (
     <div
-      className="header unselectable header-animated header-dark"
+      className="header header-animated header-dark"
       style={{ marginBottom: "0" }}
     >
       <div className="header-brand">
         <div className="nav-item no-hover">
-          <a>
+          <Link to="/home">
             <h6 className="title">rrrageinput</h6>
-          </a>
+          </Link>
         </div>
         <div
           className={`nav-item nav-btn ${open ? "active" : ""}`}
@@ -28,14 +30,14 @@ export const Header: React.FC = () => {
       <div className={`header-nav ${open ? "active" : ""}`} id="header-menu">
         <div className="nav-right">
           <div className="nav-item text-center">
-            <a href="#">
+            <a href="https://github.com/supra-modum" target="blank">
               <span className="icon">
                 <i className="fab fa-wrapper fa-github" aria-hidden="true"></i>
               </span>
             </a>
           </div>
           <div className="nav-item text-center">
-            <a href="#">
+            <a href="https://twitter.com/rrrage_input" target="blank">
               <span className="icon">
                 <i className="fab fa-wrapper fa-twitter" aria-hidden="true"></i>
               </span>
@@ -45,13 +47,10 @@ export const Header: React.FC = () => {
             <a className="nav-dropdown-link">Menu</a>
             <ul className="dropdown-menu dropdown-animated" role="menu">
               <li role="menu-item">
-                <a href="#">First Item</a>
+                <Link to="/cv">CV</Link>
               </li>
               <li role="menu-item">
-                <a href="#">Second Item</a>
-              </li>
-              <li role="menu-item">
-                <a href="#">Third Item</a>
+                <Link to="/projects">Projects</Link>
               </li>
             </ul>
           </div>
