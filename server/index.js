@@ -1,9 +1,18 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable no-undef */
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+const path = require("path");
 const express = require("express");
 const app = express();
+const port = 8080;
 
-app.use(express.static("dist"));
+// app.use(express.static("dist"));
 
-// eslint-disable-next-line no-undef
-app.listen(3000, () => console.log("Listening on port 3000!"));
+app.set("dist", path.join(__dirname, "dist"));
+
+app.get("/", (req, res) => {
+  res.render("index");
+});
+
+app.listen(port, () =>
+  console.log(`server started at http://localhost:${port}`)
+);

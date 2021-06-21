@@ -1,31 +1,42 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="footer bg-gray-200">
-      <h6 className="footer__title uppercase" style={{ color: "#7fced5" }}>
-        rrrageinput
-      </h6>
+    <footer className="footer bg-gray-100" style={{ marginTop: "0" }}>
+      <h6 className="footer__title uppercase text-indigo-400">rrrageinput</h6>
       <div className="content">
         <div className="divider"></div>
         <div className="row">
           <div className="col-12">
             <ul className="no-bullets">
-              <a href="#header-menu">
+              <Link to="/home">
                 <li className="footer__list-item">Home</li>
-              </a>
-              <a href="!#">
+              </Link>
+              <Link to="/cv">
                 <li className="footer__list-item">CV</li>
-              </a>
-              <a href="!#">
+              </Link>
+              <Link to="/projects">
                 <li className="footer__list-item">Projects</li>
-              </a>
+              </Link>
               <ul></ul>
             </ul>
           </div>
         </div>
       </div>
-      <p className="subtitle">rrrageinput © 2021.</p>
+      <p className="subtitle">Catherine Zaslavskaya © 2021</p>
+      <p className="subtitle">
+        Built with React & TypeScript,{" "}
+        <a
+          href="http://cirrus-ui.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="u u-LR text-indigo-300"
+        >
+          Cirrus UI
+        </a>{" "}
+        and 🖤
+      </p>
     </footer>
   );
 };
