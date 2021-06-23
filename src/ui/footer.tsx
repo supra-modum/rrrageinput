@@ -16,8 +16,8 @@ export const Footer: React.FC = () => {
               <Link to="/cv">
                 <li className="footer__list-item">CV</li>
               </Link>
-              <Link to="/projects">
-                <li className="footer__list-item">Projects</li>
+              <Link to="/projects-blog">
+                <li className="footer__list-item">Projects & Blog</li>
               </Link>
               <ul></ul>
             </ul>
@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
           href="http://cirrus-ui.netlify.app"
           target="_blank"
           rel="noopener noreferrer"
-          className="u u-LR text-indigo-300"
+          className="u u-LR text-indigo-400"
         >
           Cirrus UI
         </a>{" "}

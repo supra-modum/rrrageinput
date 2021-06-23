@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import "cirrus-ui";
 
-import { CV, Home, Projects } from "./exports";
+import { CV, Home, ProjectsAndBlog } from "./exports";
 
 export const App: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ export const App: React.FC = () => {
           <Redirect to="/home" />
         </Route>
         <Route exact path="/cv" component={CV} />
-        <Route exact path="/projects" component={Projects} />
+        <Route exact path="/projects-blog" component={ProjectsAndBlog} />
       </Switch>
     </>
   );
