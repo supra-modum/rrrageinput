@@ -8,7 +8,7 @@ export const Header: React.FC = () => {
 
   return (
     <div
-      className="header header-animated header-dark"
+      className="header unselectable u-unselectable header-animated header-dark"
       style={{ marginBottom: "0" }}
     >
       <div className="header-brand">
@@ -50,7 +50,7 @@ export const Header: React.FC = () => {
                 <Link to="/cv">CV</Link>
               </li>
               <li role="menu-item">
-                <Link to="/projects">Projects</Link>
+                <Link to="/projects-blog">Projects & Blog</Link>
               </li>
             </ul>
           </div>

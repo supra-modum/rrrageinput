@@ -14,7 +14,7 @@ export const SmallHeading: React.FC<SmallHeadingProps> = ({
   return (
     <div>
       <h4>{h4}</h4>
-      <h5 className="text-indigo-400">{h5}</h5>
+      <h5 className="text-indigo-500">{h5}</h5>
       <p className="text-gray-600">{children}</p>
     </div>
   );
