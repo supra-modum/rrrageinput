@@ -7,5 +7,5 @@ echo "Building app"
 npm run build
 
 echo "Deploying files to server"
-rsync -avP dist/ supramodum@rrrageinput.com:/var/www/rrrageinput.com/
+rsync -avP dist/ root@rrrageinput.com:/var/www/rrrageinput.com/
 echo "Deployment complete"
