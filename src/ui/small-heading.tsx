@@ -12,10 +12,12 @@ export const SmallHeading: React.FC<SmallHeadingProps> = ({
   children,
 }) => {
   return (
-    <div>
-      <h4>{h4}</h4>
-      <h5 className="text-indigo-500">{h5}</h5>
-      <p className="text-gray-600">{children}</p>
+    <div className="pt-6 pb-3">
+      <div className="px-4">
+        <h4 className="title">{h4}</h4>
+        <h5 className="text-indigo-500 subtitle">{h5}</h5>
+        <p className="text-gray-600">{children}</p>
+      </div>
     </div>
   );
 };

@@ -8,9 +8,9 @@ export const App: React.FC = () => {
   return (
     <>
       <Switch>
-        <Route exact path="/home" component={Home} />
-        <Route exact path="/">
-          <Redirect to="/home" />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/home">
+          <Redirect to="/" />
         </Route>
         <Route exact path="/cv" component={CV} />
         <Route exact path="/projects-blog" component={ProjectsAndBlog} />

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export const Hero: React.FC = () => {
+export const HeroMain: React.FC = () => {
   const [colorChange, setColorChange] = useState("");
   const [fontColorChange, setFontColorChange] = useState("");
 
@@ -29,11 +29,10 @@ export const Hero: React.FC = () => {
 
   return (
     <div
-      className="hero fullscreen"
+      className="hero fullscreen u-unselectable"
       style={{
         backgroundColor: `${colorChange}`,
         transition: "background-color 1s ease",
-        position: "relative",
       }}
     >
       <div className="hero-body">
