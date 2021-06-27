@@ -5,6 +5,9 @@ import { HeroCV } from "./ui/hero-cv";
 import { SmallHeading } from "./ui/small-heading";
 import { Tags } from "./ui/tags";
 import { H6Animated } from "./ui/h6-animated";
+import { MarkComponent } from "./ui/mark-component";
+import { List } from "./ui/list";
+import { Article } from "./ui/article";
 import { Wrapper } from "./ui/wrapper";
 import { Home } from "./home";
 import { CV } from "./cv";
@@ -16,6 +19,9 @@ export {
   HeroCV,
   Footer,
   H6Animated,
+  MarkComponent,
+  List,
+  Article,
   Wrapper,
   SmallHeading,
   Tags,
