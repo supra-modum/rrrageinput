@@ -4,7 +4,7 @@ import { Tags } from "./tags";
 
 export const HeroCV: React.FC = () => {
   return (
-    <div className="hero fullscreen bg-blue-100 u-unselectable">
+    <div className="hero fullscreen bg-blue-100 u-unselectable mb-2">
       <div className="hero-body">
         <div className="mx-auto">
           <div className="p-2">

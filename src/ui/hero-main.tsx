@@ -46,7 +46,7 @@ export const HeroMain: React.FC = () => {
             Hi! My name is Catherine
           </h1>
           <h2 className="subtitle white sub-title faded">
-            Software engineer. Self-taught artist.
+            Frontend engineer. Self-taught artist.
           </h2>
         </div>
       </div>
