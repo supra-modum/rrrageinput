@@ -1,53 +1,55 @@
-import React, { useState, useEffect } from "react";
+import { useStore } from 'effector-react';
+import React from 'react';
+import { $language, textMainPageEng, textMainPageRu } from '~/model/texts';
 
 export const HeroMain: React.FC = () => {
-  const [colorChange, setColorChange] = useState("");
-  const [fontColorChange, setFontColorChange] = useState("");
+  const language = useStore($language);
 
-  const scroll = () => {
-    if (window.scrollY <= 50) {
-      setColorChange("#212121");
-    } else {
-      setColorChange("#a1befa");
-    }
-  };
-
-  const headerScroll = () => {
-    if (window.scrollY <= 50) {
-      setFontColorChange("#a1befa");
-    } else {
-      setFontColorChange("white");
-    }
-  };
-
-  useEffect(() => {
-    scroll();
-    headerScroll();
-
-    window.addEventListener("scroll", scroll);
-  }, [scroll, headerScroll]);
+  const img =
+    'https://images.unsplash.com/photo-1486551937199-baf066858de7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1446&q=80';
 
   return (
     <div
-      className="hero fullscreen u-unselectable"
+      className='hero fullscreen u-unselectable parallax-img hero-img'
       style={{
-        backgroundColor: `${colorChange}`,
-        transition: "background-color 1s ease",
+        background: `linear-gradient(rgba(33,33,33, .9), rgba(33,33,33, .7)), url(${img})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
       }}
     >
-      <div className="hero-body">
-        <div className="content u-text-center">
-          <h1
-            className="title pb-4"
-            style={{
-              color: `${fontColorChange}`,
-            }}
-          >
-            Hi! My name is Catherine
-          </h1>
-          <h2 className="subtitle white sub-title faded">
-            Frontend engineer. Self-taught artist.
-          </h2>
+      <div className='hero-body'>
+        <div className='content'>
+          {language === 'English' ? (
+            <>
+              <h2
+                className='p-2 white u-inline-block'
+                style={{
+                  background:
+                    'linear-gradient(to right, rgb(142, 45, 226), rgb(74, 0, 224))',
+                  borderRadius: '5px',
+                }}
+              >
+                {textMainPageEng.t1}
+              </h2>
+              <h2 className='py-2 white u-inline-block'>
+                {textMainPageEng.t2}
+              </h2>
+            </>
+          ) : (
+            <>
+              <h2
+                className='p-2 white u-inline-block'
+                style={{
+                  background:
+                    'linear-gradient(to right, rgb(142, 45, 226), rgb(74, 0, 224))',
+                  borderRadius: '5px',
+                }}
+              >
+                {textMainPageRu.t1}
+              </h2>
+              <h2 className='py-2 white u-inline-block'>{textMainPageRu.t2}</h2>
+            </>
+          )}
         </div>
       </div>
     </div>
