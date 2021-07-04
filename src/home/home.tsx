@@ -7,7 +7,7 @@ import {
   setLanguage,
   textMainPageEng,
   textMainPageRu,
-} from '~/model/texts';
+} from '~/model';
 
 export const Home: React.FC = () => {
   const language = useStore($language);
@@ -54,8 +54,12 @@ export const Home: React.FC = () => {
         <div className='hero-body'>
           <div className='content'>
             <div
-              className='card u-flex-column u-center w-80'
-              style={{ boxShadow: 'rgba(0, 0, 0, 0.3) 0px 20px 30px' }}
+              className='card u-flex-column u-center bg-gray-000'
+              style={{
+                boxShadow: 'rgba(0, 0, 0, 0.3) 0px 20px 30px',
+                maxWidth: '400px',
+                height: '300px',
+              }}
             >
               <div className='card__header'>
                 <p className='font-bold px-3'>

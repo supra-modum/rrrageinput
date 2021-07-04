@@ -19,6 +19,14 @@ export enum textMainPageRu {
   t6 = 'Контакты 😎',
 }
 
+export enum textCVHeaderEng {
+  t1 = 'Experience & Skills 👩🏻‍💻',
+}
+
+export enum textCVHeaderRu {
+  t1 = 'Опыт и навыки 👩🏻‍💻',
+}
+
 export type Languages = 'English' | 'Russian';
 
 export const languageLocalStorage = connectLocalStorage('language').onError(

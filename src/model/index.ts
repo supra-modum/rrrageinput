@@ -1,9 +1,17 @@
 import {
   textMainPageEng,
   textMainPageRu,
-  setEnglish,
-  setRussian,
+  textCVHeaderEng,
+  textCVHeaderRu,
+  setLanguage,
   $language,
 } from './texts';
 
-export { textMainPageEng, textMainPageRu, setRussian, setEnglish, $language };
+export {
+  textMainPageEng,
+  textMainPageRu,
+  $language,
+  textCVHeaderEng,
+  textCVHeaderRu,
+  setLanguage,
+};
