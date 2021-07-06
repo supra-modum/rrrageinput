@@ -1,2 +1,2 @@
-import { CV } from "./cv";
+import { CV } from './cv';
 export { CV };

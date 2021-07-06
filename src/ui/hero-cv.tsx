@@ -1,31 +1,25 @@
-import React from "react";
-
-import { Tags } from "./tags";
+import { useStore } from 'effector-react';
+import React from 'react';
+import { $language, textCVHeaderEng, textCVHeaderRu } from '~/model';
 
 export const HeroCV: React.FC = () => {
+  const language = useStore($language);
+
   return (
-    <div className="hero fullscreen bg-blue-100 u-unselectable mb-2">
-      <div className="hero-body">
-        <div className="mx-auto">
-          <div className="p-2">
-            <h1 className="text-indigo-500">Work experience 👩🏻‍💻</h1>
-          </div>
-          <div className="p-2">
-            <h3>Skills:</h3>
-            <Tags
-              tagsInfo={[
-                "TypeScript",
-                "React",
-                "Node.js",
-                "Scala.js",
-                "Effector.js",
-                "Jest & JUnit",
-                "Scala",
-              ]}
-            />
-            <Tags
-              tagsInfo={["Tailwind CSS", "Sass", "Bootstrap", "Material UI"]}
-            />
+    <div
+      className='hero u-unselectable'
+      style={{
+        background:
+          'radial-gradient(circle, #1062fe, #2153f8, #3141f2, #402cea, #4d00e0)',
+        height: '350px',
+      }}
+    >
+      <div className='hero-body'>
+        <div className='mx-auto'>
+          <div className='p-2'>
+            <h1 className='white u-text-center'>
+              {language === 'English' ? textCVHeaderEng.t1 : textCVHeaderRu.t1}
+            </h1>
           </div>
         </div>
       </div>

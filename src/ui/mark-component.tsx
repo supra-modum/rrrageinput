@@ -1,5 +1,21 @@
-import React from "react";
+import React from 'react';
 
-export const MarkComponent: React.FC = ({ children }) => {
-  return <mark className="bg-indigo-300">{children}</mark>;
+interface MarkProps {
+  markBackgroundStyle?: boolean;
+}
+
+export const MarkComponent: React.FC<MarkProps> = ({
+  children,
+  markBackgroundStyle = false,
+}) => {
+  return markBackgroundStyle ? (
+    <mark
+      style={{ backgroundColor: 'rgba(16,98,254)' }}
+      className='u-round white'
+    >
+      {children}
+    </mark>
+  ) : (
+    <i style={{ color: 'rgba(16,98,254)' }}>{children}</i>
+  );
 };
