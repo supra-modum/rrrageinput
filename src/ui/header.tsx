@@ -41,9 +41,6 @@ export const Header: React.FC = () => {
             </a>
           </div>
           <div className='nav-item text-center'>
-            <Link to='/cv'>.info( )</Link>
-          </div>
-          <div className='nav-item text-center'>
             <Link to='/projects-blog'>.projectsAndBlog( )</Link>
           </div>
           <div className='nav-item text-center'>

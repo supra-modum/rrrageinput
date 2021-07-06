@@ -1,6 +1,14 @@
 import React, { useEffect } from 'react';
 import 'cirrus-ui';
-import { Header, HeroMain, Footer } from '../exports';
+import {
+  Header,
+  HeroMain,
+  Footer,
+  HeroCV,
+  Wrapper,
+  HeroShortAbout,
+  CardJob,
+} from '../exports';
 import { useStore } from 'effector-react';
 import {
   $language,
@@ -8,6 +16,8 @@ import {
   textMainPageEng,
   textMainPageRu,
 } from '~/model';
+import { textAboutMSEng, textAboutMSRu } from '~/model/texts';
+import { JobList } from './job-list';
 
 export const Home: React.FC = () => {
   const language = useStore($language);
@@ -23,32 +33,39 @@ export const Home: React.FC = () => {
     <>
       <Header />
       <HeroMain />
-      <div className='hero fullscreen bg-gray-000'>
-        <div className='hero-body'>
-          <div className='mx-auto'>
-            <div className='content'>
-              {language === 'English' ? (
-                <>
-                  <p className='lead text-gray-700'>{textMainPageEng.t3}</p>
-                  <p className='lead text-gray-700'>{textMainPageEng.t4}</p>
-                  <p className='lead text-gray-700'>{textMainPageEng.t5}</p>
-                </>
-              ) : (
-                <>
-                  <p className='lead text-gray-700'>{textMainPageRu.t3}</p>
-                  <p className='lead text-gray-700'>{textMainPageRu.t5}</p>
-                </>
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
+      <HeroShortAbout
+        language={language}
+        pEng={[textMainPageEng.t3, textMainPageEng.t4, textMainPageEng.t5]}
+        pRu={[textMainPageRu.t3, textMainPageRu.t4, textMainPageRu.t5]}
+      />
+      <HeroCV />
+      <Wrapper>
+        <CardJob
+          headingH4={'Full stack engineer'}
+          headingH5={'МойСклад'}
+          headingSubtitle={
+            <>
+              <p className='mb-0'>Moscow, Russia</p>
+              <p>(Aug 2020 - Present)</p>
+            </>
+          }
+          about={
+            language === 'English'
+              ? [textAboutMSEng.t1, textAboutMSEng.t2]
+              : [textAboutMSRu.t1]
+          }
+        >
+          <JobList language={language} />
+        </CardJob>
+      </Wrapper>
       <div
-        className='hero'
+        className='hero bg-gray-200'
         style={{
           height: '600px',
-          background:
-            'linear-gradient(to right, rgb(142, 45, 226), rgb(74, 0, 224))',
+          backgroundImage:
+            'radial-gradient(rgba(15,98,254, .7) 1px, rgba(15,98,254, .05) 0)',
+          backgroundSize: '22px 22px',
+          backgroundPosition: 'center',
         }}
       >
         <div className='hero-body'>
@@ -56,13 +73,13 @@ export const Home: React.FC = () => {
             <div
               className='card u-flex-column u-center bg-gray-000'
               style={{
-                boxShadow: 'rgba(0, 0, 0, 0.3) 0px 20px 30px',
-                maxWidth: '400px',
+                boxShadow: 'rgba(16,98,254, .7) 0px 20px 30px',
+                maxWidth: '600px',
                 height: '300px',
               }}
             >
               <div className='card__header'>
-                <p className='font-bold px-3'>
+                <p className='font-bold px-3 u-text-center'>
                   {language === 'English'
                     ? textMainPageEng.t6
                     : textMainPageRu.t6}
@@ -72,7 +89,7 @@ export const Home: React.FC = () => {
                 <p className='px-2'>
                   <a
                     href='mailto:3mfhognm5@relay.firefox.com'
-                    className='u u-LR text-link'
+                    className='u u-LR text-blue-600'
                   >
                     Email
                   </a>
@@ -80,7 +97,7 @@ export const Home: React.FC = () => {
                 <p className='px-2'>
                   <a
                     href='https://t.me/supramodum'
-                    className='u u-LR text-link'
+                    className='u u-LR text-blue-600'
                   >
                     Telegram
                   </a>

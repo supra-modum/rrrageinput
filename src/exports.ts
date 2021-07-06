@@ -10,14 +10,18 @@ import { List } from './ui/list';
 import { Article } from './ui/article';
 import { Wrapper } from './ui/wrapper';
 import { Home } from './home';
-import { CV } from './cv';
+// import { CV } from './cv';
+import { CardJob } from './ui/card-job';
 import { ProjectsAndBlog } from './projects-blog';
+import { ParagraphLead } from './ui/paragraph-lead';
+import { HeroShortAbout } from './ui/hero-short-about';
 
 export {
   Header,
   HeroMain,
   HeroCV,
   Footer,
+  CardJob,
   H6Animated,
   MarkComponent,
   List,
@@ -25,7 +29,8 @@ export {
   Wrapper,
   SmallHeading,
   Tags,
+  ParagraphLead,
   Home,
-  CV,
   ProjectsAndBlog,
+  HeroShortAbout,
 };

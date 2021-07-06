@@ -7,10 +7,11 @@ export const HeroCV: React.FC = () => {
 
   return (
     <div
-      className='hero fullscreen u-unselectable mb-0'
+      className='hero u-unselectable'
       style={{
         background:
-          'linear-gradient(to right, rgb(142, 45, 226), rgb(74, 0, 224))',
+          'radial-gradient(circle, #1062fe, #2153f8, #3141f2, #402cea, #4d00e0)',
+        height: '350px',
       }}
     >
       <div className='hero-body'>

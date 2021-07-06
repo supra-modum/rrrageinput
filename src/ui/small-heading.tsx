@@ -1,5 +1,4 @@
 import React from 'react';
-import 'cirrus-ui';
 
 interface SmallHeadingProps {
   h4: string;
@@ -12,10 +11,17 @@ export const SmallHeading: React.FC<SmallHeadingProps> = ({
   children,
 }) => {
   return (
-    <div className='py-2'>
+    <div
+      className='pb-2'
+      style={{
+        boxShadow: 'rgba(16,98,254, .7) 0px 10px 10px -10px',
+      }}
+    >
       <div className='px-4'>
         <h4 className='title'>{h4}</h4>
-        <h5 className='text-purple-500 subtitle'>{h5}</h5>
+        <h5 className='subtitle' style={{ color: 'rgb(16,98,254)' }}>
+          {h5}
+        </h5>
         <p className='text-gray-600 m-0'>{children}</p>
       </div>
     </div>

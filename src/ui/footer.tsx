@@ -17,9 +17,6 @@ export const Footer: React.FC = () => {
                 <Link to='/home'>
                   <li className='footer__list-item'>Home</li>
                 </Link>
-                <Link to='/cv'>
-                  <li className='footer__list-item'>CV</li>
-                </Link>
                 <Link to='/projects-blog'>
                   <li className='footer__list-item'>Projects & Blog</li>
                 </Link>
