@@ -89,7 +89,8 @@ export const Home: React.FC = () => {
                 <p className='px-2'>
                   <a
                     href='mailto:3mfhognm5@relay.firefox.com'
-                    className='u u-LR text-blue-600'
+                    className='u u-LR'
+                    style={{ color: 'rgba(15,98,254)' }}
                   >
                     Email
                   </a>
@@ -97,7 +98,8 @@ export const Home: React.FC = () => {
                 <p className='px-2'>
                   <a
                     href='https://t.me/supramodum'
-                    className='u u-LR text-blue-600'
+                    className='u u-LR'
+                    style={{ color: 'rgba(15,98,254)' }}
                   >
                     Telegram
                   </a>

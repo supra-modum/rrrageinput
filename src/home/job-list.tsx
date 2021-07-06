@@ -63,11 +63,6 @@ export const JobList: React.FC<JobListProps> = ({ language }) => {
           регистраторами
         </>,
         <>
-          Programming automated GUI tests using{' '}
-          <MarkComponent>Java</MarkComponent> and{' '}
-          <MarkComponent>JUnit</MarkComponent>
-        </>,
-        <>
           Использую инструменты разработки: <MarkComponent>GIT</MarkComponent>,{' '}
           <MarkComponent>DevTools</MarkComponent>,{' '}
           <MarkComponent>Webpack</MarkComponent>,{' '}
