@@ -23,41 +23,74 @@ export const HeroMain: React.FC = () => {
             {language === 'English' ? (
               <>
                 <div className='u-flex-column'>
-                  <h2
-                    className='p-2 white u-inline-block'
-                    style={{
-                      background:
-                        'linear-gradient(to right, rgb(16,98,254), rgb(74, 0, 224))',
-                      borderRadius: '5px',
-                    }}
-                  >
-                    {textMainPageEng.t1}
+                  <h2 className='white'>
+                    <span
+                      style={{
+                        backgroundColor: 'rgb(16,98,254)',
+                        boxShadow:
+                          '0.50em 0 0 rgb(16,98,254), -0.50em 0 0 rgb(16,98,254)',
+                        boxDecorationBreak: 'clone',
+                        lineHeight: 2.5,
+                        display: 'inline',
+                        padding: '0.2em 0em',
+                      }}
+                    >
+                      {textMainPageEng.t1}
+                    </span>
                   </h2>
                 </div>
                 <div className='u-flex-column'>
-                  <h2 className='py-2 white u-inline-block'>
-                    {textMainPageEng.t2}
+                  <h2 className='white'>
+                    <span
+                      style={{
+                        backgroundColor: 'rgb(16,98,254)',
+                        boxShadow:
+                          '0.50em 0 0 rgb(16,98,254), -0.50em 0 0 rgb(16,98,254)',
+                        boxDecorationBreak: 'clone',
+                        lineHeight: 2.5,
+                        display: 'inline',
+                        padding: '0.2em 0em',
+                      }}
+                    >
+                      {textMainPageEng.t2}
+                    </span>
                   </h2>
                 </div>
               </>
             ) : (
               <>
                 <div className='u-flex-column'>
-                  <h2
-                    className='p-2 white u-inline-block'
-                    style={{
-                      background: `linear-gradient(to right, rgb(16,98,254), rgb(74, 0, 224))`,
-                      borderRadius: '5px',
-                      backgroundRepeat: 'repeat',
-                      backgroundSize: 'cover',
-                    }}
-                  >
-                    {textMainPageRu.t1}
+                  <h2 className='white'>
+                    <span
+                      style={{
+                        backgroundColor: 'rgb(16,98,254)',
+                        boxShadow:
+                          '0.50em 0 0 rgb(16,98,254), -0.50em 0 0 rgb(16,98,254)',
+                        boxDecorationBreak: 'clone',
+                        lineHeight: 2.5,
+                        display: 'inline',
+                        padding: '0.2em 0em',
+                      }}
+                    >
+                      {textMainPageRu.t1}
+                    </span>
                   </h2>
                 </div>
                 <div className='u-flex-column'>
-                  <h2 className='py-2 white u-inline-block'>
-                    {textMainPageRu.t2}
+                  <h2 className='white'>
+                    <span
+                      style={{
+                        backgroundColor: 'rgb(16,98,254)',
+                        boxShadow:
+                          '0.50em 0 0 rgb(16,98,254), -0.50em 0 0 rgb(16,98,254)',
+                        boxDecorationBreak: 'clone',
+                        lineHeight: 2.5,
+                        display: 'inline',
+                        padding: '0.2em 0em',
+                      }}
+                    >
+                      {textMainPageRu.t2}
+                    </span>
                   </h2>
                 </div>
               </>
