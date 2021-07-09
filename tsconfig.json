@@ -7,11 +7,11 @@
     "sourceMap": true,
     "strict": true,
     "moduleResolution": "node",
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "noImplicitAny": true,
 
     "paths": {
-      "~/*": ["./*"]
+      "~*": ["./src/*"]
     },
     "typeRoots": ["node_modules/@types"],
     "allowSyntheticDefaultImports": true,

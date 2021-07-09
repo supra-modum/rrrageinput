@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { useStore } from 'effector-react';
 import React from 'react';
 import { $language, textMainPageEng, textMainPageRu } from '~/model/texts';
-import { imageHeroMain } from '../assets/image-links';
-
+//@ts-ignore
+import background from '../assets/background.png';
 export const HeroMain: React.FC = () => {
   const language = useStore($language);
 
@@ -10,7 +11,7 @@ export const HeroMain: React.FC = () => {
     <div
       className='hero fullscreen u-unselectable parallax-img hero-img'
       style={{
-        background: `linear-gradient(to right bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7), rgba(33,33,33, .7),rgba(16,98,254, .6), rgba(74, 0, 224, .7)), url('https://rrrageinput.com/background.png')`,
+        background: `linear-gradient(to right bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7), rgba(33,33,33, .7),rgba(16,98,254, .6), rgba(74, 0, 224, .7)), url(${background})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
       }}
