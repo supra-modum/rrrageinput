@@ -10,7 +10,7 @@ export const HeroMain: React.FC = () => {
     <div
       className='hero fullscreen u-unselectable parallax-img hero-img'
       style={{
-        background: `linear-gradient(to right bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7), rgba(33,33,33, .7),rgba(16,98,254, .6), rgba(74, 0, 224, .7)), url('https://rrrageinput/assets/background.jpeg')`,
+        background: `linear-gradient(to right bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7), rgba(33,33,33, .7),rgba(16,98,254, .6), rgba(74, 0, 224, .7)), url('https://rrrageinput.com/background.png')`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
       }}
