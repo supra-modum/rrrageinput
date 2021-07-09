@@ -4,17 +4,17 @@ import { HeroMain } from './ui/hero-main';
 import { HeroCV } from './ui/hero-cv';
 import { SmallHeading } from './ui/small-heading';
 import { Tags } from './ui/tags';
-import { H6Animated } from './ui/h6-animated';
+import { H6Animated } from './ui-lib/h6-animated';
 import { MarkComponent } from './ui/mark-component';
 import { List } from './ui/list';
 import { Article } from './ui/article';
 import { Wrapper } from './ui/wrapper';
 import { Home } from './home';
-// import { CV } from './cv';
 import { CardJob } from './ui/card-job';
 import { ProjectsAndBlog } from './projects-blog';
 import { ParagraphLead } from './ui/paragraph-lead';
 import { HeroShortAbout } from './ui/hero-short-about';
+import { Contacts } from './contacts';
 
 export {
   Header,
@@ -33,4 +33,5 @@ export {
   Home,
   ProjectsAndBlog,
   HeroShortAbout,
+  Contacts,
 };

@@ -10,7 +10,7 @@ import {
   SmallHeading,
   MarkComponent,
   List,
-} from '../exports';
+} from '../../exports';
 import { $language } from '~/model';
 import { useStore } from 'effector-react';
 import { setLanguage } from '~/model/texts';
