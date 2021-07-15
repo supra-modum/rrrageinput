@@ -1,27 +1,22 @@
-import React, { useEffect } from 'react';
-import 'cirrus-ui';
-import {
-  Header,
-  HeroMain,
-  Footer,
-  HeroCV,
-  Wrapper,
-  HeroShortAbout,
-  CardJob,
-  Contacts,
-} from '../exports';
+import React, { useEffect, Suspense } from 'react';
 import { useStore } from 'effector-react';
+import 'cirrus-ui';
+
+import { Footer, Header, RenderLoader } from '../exports';
+import { Skills } from './skills';
 import {
   $language,
   setLanguage,
   textMainPageEng,
   textMainPageRu,
 } from '~/model';
-import { textAboutMSEng, textAboutMSRu } from '~/model/texts';
-import { JobList } from './job-list';
 
 export const Home: React.FC = () => {
   const language = useStore($language);
+
+  const HeroMain = React.lazy(() => import('./hero-main'));
+  const HeroAbout = React.lazy(() => import('./hero-about'));
+  const Contacts = React.lazy(() => import('./contacts'));
 
   useEffect(() => {
     const lang = JSON.parse(localStorage.getItem('language') || 'English');
@@ -33,37 +28,29 @@ export const Home: React.FC = () => {
   return (
     <>
       <Header />
-      <HeroMain />
-      <HeroShortAbout
-        language={language}
-        pEng={[textMainPageEng.t3, textMainPageEng.t4, textMainPageEng.t5]}
-        pRu={[textMainPageRu.t3, textMainPageRu.t4, textMainPageRu.t5]}
-      />
-      <HeroCV />
-      <Wrapper>
-        <CardJob
-          headingH4={'Full stack engineer'}
-          headingH5={'МойСклад'}
-          headingSubtitle={
-            <>
-              <p className='mb-0'>Moscow, Russia</p>
-              <p>(Aug 2020 - Present)</p>
-            </>
-          }
-          about={
-            language === 'English'
-              ? [textAboutMSEng.t1, textAboutMSEng.t2]
-              : [textAboutMSRu.t1]
-          }
-        >
-          <JobList language={language} />
-        </CardJob>
-      </Wrapper>
-      <Contacts
-        language={language}
-        contactEng={textMainPageEng.t6}
-        contactRu={textMainPageRu.t6}
-      />
+      <main>
+        <Suspense fallback={RenderLoader}>
+          <HeroMain />
+        </Suspense>
+        <Suspense fallback={RenderLoader}>
+          <div className='space xlarge bg-gray-000' />
+          <HeroAbout
+            headingTextEng='About me'
+            headingTextRu='Обо мне'
+            language={language}
+          >
+            <Skills language={language} />
+          </HeroAbout>
+          <div className='space large bg-gray-000' />
+        </Suspense>
+        <Suspense fallback={RenderLoader}>
+          <Contacts
+            language={language}
+            contactEng={textMainPageEng.t3}
+            contactRu={textMainPageRu.t3}
+          />
+        </Suspense>
+      </main>
       <Footer />
     </>
   );

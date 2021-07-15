@@ -3,9 +3,9 @@ import {
   textMainPageRu,
   textCVHeaderEng,
   textCVHeaderRu,
-  setLanguage,
-  $language,
 } from './texts';
+
+import { setLanguage, $language } from './language';
 
 export {
   textMainPageEng,

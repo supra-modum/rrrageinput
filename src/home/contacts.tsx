@@ -1,5 +1,4 @@
 import React from 'react';
-import 'cirrus-ui';
 
 interface ContactsProps {
   language: string;
@@ -7,7 +6,7 @@ interface ContactsProps {
   contactRu: string;
 }
 
-export const Contacts: React.FC<ContactsProps> = ({
+const Contacts: React.FC<ContactsProps> = ({
   language,
   contactEng,
   contactRu,
@@ -18,7 +17,7 @@ export const Contacts: React.FC<ContactsProps> = ({
       style={{
         height: '600px',
         backgroundImage:
-          'radial-gradient(rgba(15,98,254, .7) 1px, rgba(15,98,254, .05) 0)',
+          'radial-gradient(rgba(15,98,254) 1px, rgba(15,98,254, .05) 0)',
         backgroundSize: '22px 22px',
         backgroundPosition: 'center',
       }}
@@ -64,3 +63,5 @@ export const Contacts: React.FC<ContactsProps> = ({
     </div>
   );
 };
+
+export default Contacts;

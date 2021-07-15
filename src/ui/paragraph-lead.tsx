@@ -11,7 +11,7 @@ export const ParagraphLead: React.FC<ParagraphLeadProps> = ({
   return (
     <>
       {data.map((paragraph, index) => (
-        <p className={`${isLead ? 'lead' : ''} text-gray-700`} key={index}>
+        <p className={`${isLead ? 'lead' : null} text-gray-700`} key={index}>
           {paragraph}
         </p>
       ))}
