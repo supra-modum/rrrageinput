@@ -14,13 +14,12 @@ export const Footer: React.FC = () => {
           <div className='row'>
             <div className='col-12'>
               <ul className='no-bullets'>
-                <Link to='/home'>
-                  <li className='footer__list-item'>Home</li>
-                </Link>
-                <Link to='/projects-blog'>
-                  <li className='footer__list-item'>Projects & Blog</li>
-                </Link>
-                <ul></ul>
+                <li className='footer__list-item py-1'>
+                  <Link to='/home'>Home</Link>
+                </li>
+                <li className='footer__list-item py-1'>
+                  <Link to='/projects-blog'>Projects & Blog</Link>
+                </li>
               </ul>
             </div>
           </div>

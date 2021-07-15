@@ -8,6 +8,7 @@
     "strict": true,
     "moduleResolution": "node",
     "baseUrl": ".",
+    "strictNullChecks": false,
     "noImplicitAny": true,
 
     "paths": {
