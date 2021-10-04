@@ -2,14 +2,14 @@ import React, { useEffect, Suspense } from 'react';
 import { useStore } from 'effector-react';
 import 'cirrus-ui';
 
-import { Footer, Header, RenderLoader } from '../exports';
+import { Footer, Header, RenderLoader } from '../ui';
 import { Skills } from './skills';
 import {
   $language,
   setLanguage,
   textMainPageEng,
   textMainPageRu,
-} from '~/model';
+} from '../model';
 
 export const Home: React.FC = () => {
   const language = useStore($language);

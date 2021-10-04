@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'cirrus-ui';
-import { setLanguage } from '~model';
+import { setLanguage } from '../model';
 
 export const Header: React.FC = () => {
   const [open, setOpen] = useState(false);

@@ -1,7 +1,6 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { useStore } from 'effector-react';
 import React from 'react';
-import { $language, textMainPageEng, textMainPageRu } from '~/model';
+import { $language, textMainPageEng, textMainPageRu } from '../model';
 
 const HeroMain: React.FC = () => {
   const language = useStore($language);

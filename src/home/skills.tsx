@@ -1,6 +1,6 @@
 import React from 'react';
-import { Tags, SmallHeading } from '~exports';
-import { textCVHeaderEng, textCVHeaderRu } from '~model';
+import { Tags, SmallHeading } from '../ui';
+import { textCVHeaderEng, textCVHeaderRu } from '../model';
 
 interface SkillsProps {
   language: string;

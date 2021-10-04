@@ -1,8 +1,8 @@
 import React from 'react';
-import { SmallHeading } from '../ui/small-heading';
+import { SmallHeading } from '../ui';
 
 //@ts-ignore
-import resume from '../assets/cv.pdf';
+import resume from 'url:../assets/cv.pdf';
 
 interface HeroAboutProps {
   language: string;

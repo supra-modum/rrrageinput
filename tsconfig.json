@@ -12,7 +12,7 @@
     "noImplicitAny": true,
 
     "paths": {
-      "~*": ["./src/*"]
+      "@rrrageinput/*": ["./src/*"],
     },
     "typeRoots": ["node_modules/@types"],
     "allowSyntheticDefaultImports": true,
