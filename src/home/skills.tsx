@@ -1,23 +1,24 @@
 import React from 'react';
-import { Tags, SmallHeading } from '~exports';
-import { textCVHeaderEng, textCVHeaderRu } from '~model';
+import { Tags, SmallHeading } from '../ui';
+import { textCVHeaderEng, textCVHeaderRu } from '../model';
 
 interface SkillsProps {
   language: string;
 }
 export const Skills: React.FC<SkillsProps> = ({ language }) => {
   return (
-    <div className='bg-gray-000'>
+    <div className="bg-gray-000">
       <SmallHeading
         h2={language === 'English' ? textCVHeaderEng.t1 : textCVHeaderRu.t1}
       />
-      <div className='u-flex-column'>
+      <div className="u-flex-column">
         <section>
           <Tags
             tagsInfo={[
               'JavaScript',
               'TypeScript',
               'React',
+              'Vue',
               'Node.js',
               'Electron.js',
               'Effector.js',
@@ -34,7 +35,7 @@ export const Skills: React.FC<SkillsProps> = ({ language }) => {
               'Babel',
               'NPM scripts',
               'Russian 🇷🇺',
-              'English 🇬🇧',
+              'English 🇬🇧'
             ]}
           />
         </section>
