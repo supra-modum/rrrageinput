@@ -11,9 +11,6 @@
     "strictNullChecks": false,
     "noImplicitAny": true,
 
-    "paths": {
-      "@rrrageinput/*": ["./src/*"],
-    },
     "typeRoots": ["node_modules/@types"],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
