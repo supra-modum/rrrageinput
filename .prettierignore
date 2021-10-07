@@ -1,4 +1,11 @@
 dist
+node_modules
+.parcel-cache
+/assets
+
 *.html
 *.json
 *.md
+*.sh
+*.scss
+*css

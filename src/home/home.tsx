@@ -1,8 +1,8 @@
-import React, { useEffect, Suspense } from 'react';
+import React, { useEffect } from 'react';
 import { useStore } from 'effector-react';
 import 'cirrus-ui';
 
-import { Footer, Header, RenderLoader } from '../ui';
+import { Footer, Header } from '../ui';
 import { Skills } from './skills';
 import {
   $language,
@@ -29,27 +29,21 @@ export const Home: React.FC = () => {
     <>
       <Header />
       <main>
-        <Suspense fallback={RenderLoader}>
-          <HeroMain />
-        </Suspense>
-        <Suspense fallback={RenderLoader}>
-          <div className='space xlarge bg-gray-000' />
-          <HeroAbout
-            headingTextEng='About me'
-            headingTextRu='Обо мне'
-            language={language}
-          >
-            <Skills language={language} />
-          </HeroAbout>
-          <div className='space large bg-gray-000' />
-        </Suspense>
-        <Suspense fallback={RenderLoader}>
-          <Contacts
-            language={language}
-            contactEng={textMainPageEng.t3}
-            contactRu={textMainPageRu.t3}
-          />
-        </Suspense>
+        <HeroMain />
+        <div className='space xlarge bg-gray-000' />
+        <HeroAbout
+          headingTextEng='About me'
+          headingTextRu='Обо мне'
+          language={language}
+        >
+          <Skills language={language} />
+        </HeroAbout>
+        <div className='space large bg-gray-000' />
+        <Contacts
+          language={language}
+          contactEng={textMainPageEng.t3}
+          contactRu={textMainPageRu.t3}
+        />
       </main>
       <Footer />
     </>

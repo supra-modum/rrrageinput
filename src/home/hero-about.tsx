@@ -1,7 +1,7 @@
 import React from 'react';
 import { SmallHeading } from '../ui';
 
-import './custom.scss';
+import './home-custom.scss';
 
 //@ts-ignore
 import resume from 'url:../assets/cv.pdf';
@@ -15,34 +15,34 @@ const HeroAbout: React.FC<HeroAboutProps> = ({
   language,
   headingTextRu,
   headingTextEng,
-  children
+  children,
 }) => {
   return (
-    <div className="hero-about hero bg-gray-000">
-      <div className="hero-body">
-        <div className="mx-auto u-relative">
-          <div className="content">
+    <div className='hero-about hero bg-gray-000'>
+      <div className='hero-body'>
+        <div className='mx-auto u-relative'>
+          <div className='content'>
             {language === 'English' ? (
               <>
                 <SmallHeading h2={headingTextEng} />
-                <a href={resume} target="_blank" className="cv-button btn">
+                <a href={resume} target='_blank' className='cv-button btn'>
                   Resume
                 </a>
               </>
             ) : (
               <>
                 <SmallHeading h2={headingTextRu} />
-                <a href={resume} target="_blank" className="cv-button btn">
+                <a href={resume} target='_blank' className='cv-button btn'>
                   Мое резюме
                 </a>
               </>
             )}
           </div>
           <section
-            className="u-overflow-y-scroll"
+            className='u-overflow-y-scroll'
             style={{ maxHeight: '800px' }}
           >
-            <div className="content py-2">
+            <div className='content py-2'>
               {language === 'English' ? (
                 <>
                   <p>
@@ -57,10 +57,10 @@ const HeroAbout: React.FC<HeroAboutProps> = ({
                   <p>
                     Currently working at{' '}
                     <a
-                      href="https://www.moysklad.ru/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="custom-link u u-LR"
+                      href='https://www.moysklad.ru/'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='custom-link u u-LR'
                     >
                       МойСклад
                     </a>{' '}
@@ -90,10 +90,10 @@ const HeroAbout: React.FC<HeroAboutProps> = ({
                   <p>
                     Сейчас работаю в компании{' '}
                     <a
-                      href="https://www.moysklad.ru/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="custom-link u u-LR"
+                      href='https://www.moysklad.ru/'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='custom-link u u-LR'
                     >
                       МойСклад
                     </a>{' '}
