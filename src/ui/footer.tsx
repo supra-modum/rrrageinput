@@ -27,7 +27,7 @@ export const Footer: React.FC = () => {
         <p className='subtitle'>
           Made with{' '}
           <a
-            href='http://https://cirrus-ui.netlify.app/'
+            href='https://cirrus-ui.netlify.app/'
             target='_blank'
             rel='noopener noreferrer'
           >

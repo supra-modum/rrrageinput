@@ -133,7 +133,7 @@ temp/
 **/*.backup.*
 **/*.back.*
 
-node_modules
+.idea
 
 workspace.code-workspace
 

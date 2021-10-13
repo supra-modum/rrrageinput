@@ -39,8 +39,8 @@ const HeroAbout: React.FC<HeroAboutProps> = ({
             )}
           </div>
           <section
-            className='u-overflow-y-scroll'
-            style={{ maxHeight: '800px' }}
+            className='u-overflow-auto'
+            style={{ maxHeight: '600px' }}
           >
             <div className='content py-2'>
               {language === 'English' ? (
@@ -50,12 +50,25 @@ const HeroAbout: React.FC<HeroAboutProps> = ({
                     1,5+ years of experience as a developer.
                   </p>
                   <p>
-                    I'm really into React & TypeScript and I'm interested in
-                    functional programming approach in JavaScript. Always
-                    passionate about learning new things ✨ 📘
+                    I love working with React & TypeScript. I’m interested in
+                    learning more about Vue.js and diving deeper into functional
+                    programming in JavaScript! Yes, I'm always passionate about
+                    learning new things ✨ 📘
                   </p>
                   <p>
                     Currently working at{' '}
+                    <a
+                      href='https://qvant.ru/'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='custom-link u u-LR'
+                    >
+                      Qvant/GPM Data
+                    </a>{' '}
+                    as a Front End Vue.js Developer. I help building modern interfaces for OOH advertising technologies.
+                  </p>
+                  <p>
+                    Previously worked at{' '}
                     <a
                       href='https://www.moysklad.ru/'
                       target='_blank'
@@ -65,7 +78,7 @@ const HeroAbout: React.FC<HeroAboutProps> = ({
                       МойСклад
                     </a>{' '}
                     as a Full stack engineer with focus on front end
-                    development. I'm a part of the team responsible for
+                    development. I was a part of the team responsible for
                     developing POS software for small business.
                   </p>
                 </>
@@ -90,6 +103,18 @@ const HeroAbout: React.FC<HeroAboutProps> = ({
                   <p>
                     Сейчас работаю в компании{' '}
                     <a
+                      href='https://qvant.ru/'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='custom-link u u-LR'
+                    >
+                      Qvant/GPM Data
+                    </a>{' '}
+                    на позиции Front End Vue.js Developer. Помогаю развивать современные out-of-home рекламные технологии.
+                  </p>
+                  <p>
+                    Ранее была частью команды{' '}
+                    <a
                       href='https://www.moysklad.ru/'
                       target='_blank'
                       rel='noopener noreferrer'
@@ -97,9 +122,8 @@ const HeroAbout: React.FC<HeroAboutProps> = ({
                     >
                       МойСклад
                     </a>{' '}
-                    на позиции Full Stack разработчика, занимаюсь
-                    POS-приложением Касса, пишу на React и TypeScript. Помогаю
-                    малому и среднему бизнесу достигать своих целей.
+                    в качестве Full Stack разработчика, занималась
+                    POS-приложением Касса, писала на React и TypeScript.
                   </p>
                 </>
               )}
