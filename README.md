@@ -1,4 +1,4 @@
 # rrrageinput
-Personal website running React &amp; TypeScript
+Personal website built with React &amp; TypeScript
 
 [rrrageinput.com](http://rrrageinput.com)
