@@ -1,20 +1,16 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'cirrus-ui';
+
 import { setLanguage } from '../model';
+
+import './ui-custom.scss';
 
 export const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div
-      className='header header-fixed u-unselectable no-hover'
-      style={{
-        marginBottom: '0',
-        backdropFilter: 'blur(5px)',
-        backgroundColor: 'rgba(255,255,255,.4)',
-      }}
-    >
+    <div className='ui-custom-header header header-fixed u-unselectable no-hover'>
       <div className='header-brand'>
         <div className='nav-item no-hover'>
           <Link to='/home'>
@@ -36,28 +32,16 @@ export const Header: React.FC = () => {
           <div
             className='nav-item text-center p-2'
             onClick={() => setLanguage('English')}
-            style={{ justifyContent: 'left' }}
             title='This page in English'
           >
-            <div
-              className='btn btn-transparent font-semibold p-0'
-              style={{ color: '#374054' }}
-            >
-              .eng
-            </div>
+            <div className='btn btn-transparent font-semibold p-0'>.eng</div>
           </div>
           <div
             className='nav-item text-center p-2'
             onClick={() => setLanguage('Russian')}
-            style={{ justifyContent: 'left' }}
             title='This page in Russian'
           >
-            <div
-              className='btn btn-transparent font-semibold p-0'
-              style={{ color: '#374054' }}
-            >
-              .ru
-            </div>
+            <div className='btn btn-transparent font-semibold p-0'>.ru</div>
           </div>
           <div className='nav-item text-center'>
             <Link
