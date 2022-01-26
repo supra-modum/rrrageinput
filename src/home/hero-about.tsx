@@ -4,7 +4,7 @@ import { SmallHeading } from '../ui';
 import './home-custom.scss';
 
 //@ts-ignore
-import resume from 'url:../assets/cv.pdf';
+import cv from 'url:../assets/cv.pdf';
 
 interface HeroAboutProps {
   language: string;
@@ -25,38 +25,35 @@ const HeroAbout: React.FC<HeroAboutProps> = ({
             {language === 'English' ? (
               <>
                 <SmallHeading h2={headingTextEng} />
-                <a href={resume} target='_blank' className='cv-button btn'>
-                  Resume
+                <a href={cv} target='_blank' className='cv-button btn'>
+                  Look at my CV
                 </a>
               </>
             ) : (
               <>
                 <SmallHeading h2={headingTextRu} />
-                <a href={resume} target='_blank' className='cv-button btn'>
+                <a href={cv} target='_blank' className='cv-button btn'>
                   Мое резюме
                 </a>
               </>
             )}
           </div>
-          <section
-            className='u-overflow-auto'
-            style={{ maxHeight: '600px' }}
-          >
+          <section className='u-overflow-auto' style={{ maxHeight: '600px' }}>
             <div className='content py-2'>
               {language === 'English' ? (
                 <>
                   <p>
-                    I'm a Front End developer based in Moscow, Russia. I have
-                    1,5+ years of experience as a developer.
+                    I'm a Front End Developer currently based in Moscow, Russia.
+                    I have 1,5 years of experience as a developer.
                   </p>
                   <p>
                     I love working with React & TypeScript. I’m interested in
                     learning more about Vue.js and diving deeper into functional
-                    programming in JavaScript! Yes, I'm always passionate about
-                    learning new things ✨ 📘
+                    programming in JavaScript! <br /> Yes, I'm always passionate
+                    about learning new things ✨ 📘
                   </p>
                   <p>
-                    Currently working at{' '}
+                    Working at{' '}
                     <a
                       href='https://qvant.ru/'
                       target='_blank'
@@ -65,7 +62,8 @@ const HeroAbout: React.FC<HeroAboutProps> = ({
                     >
                       Qvant/GPM Data
                     </a>{' '}
-                    as a Front End Vue.js Developer. I help building modern interfaces for OOH advertising technologies.
+                    as a <b>Front End Vue.js Developer</b>. I help building
+                    modern interfaces for AdTech.
                   </p>
                   <p>
                     Previously worked at{' '}
@@ -77,7 +75,7 @@ const HeroAbout: React.FC<HeroAboutProps> = ({
                     >
                       МойСклад
                     </a>{' '}
-                    as a Full stack engineer with focus on front end
+                    as a <b>Full Stack Developer</b> with focus on Front End
                     development. I was a part of the team responsible for
                     developing POS software for small business.
                   </p>
@@ -110,7 +108,8 @@ const HeroAbout: React.FC<HeroAboutProps> = ({
                     >
                       Qvant/GPM Data
                     </a>{' '}
-                    на позиции Front End Vue.js Developer. Помогаю развивать современные out-of-home рекламные технологии.
+                    на позиции Front End Vue.js Developer. Помогаю развивать
+                    современные out-of-home рекламные технологии.
                   </p>
                   <p>
                     Ранее была частью команды{' '}

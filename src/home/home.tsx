@@ -41,8 +41,8 @@ export const Home: React.FC = () => {
         <div className='space large bg-gray-000' />
         <Contacts
           language={language}
-          contactEng={textMainPageEng.t3}
-          contactRu={textMainPageRu.t3}
+          contactEng={textMainPageEng.text2}
+          contactRu={textMainPageRu.text2}
         />
       </main>
       <Footer />

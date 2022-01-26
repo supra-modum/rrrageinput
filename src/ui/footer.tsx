@@ -46,7 +46,7 @@ export const Footer: React.FC = () => {
           </a>
         </p>
         <div className='space large' style={{ backgroundColor: '#121212' }} />
-        <p className='subtitle'>Catherine Zaslavskaya © 2021</p>
+        <p className='subtitle'>Catherine Zaslavskaya © 2022</p>
       </footer>
     </>
   );

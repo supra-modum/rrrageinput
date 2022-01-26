@@ -9,7 +9,7 @@ export const Skills: React.FC<SkillsProps> = ({ language }) => {
   return (
     <div className='bg-gray-000'>
       <SmallHeading
-        h2={language === 'English' ? textCVHeaderEng.t1 : textCVHeaderRu.t1}
+        h2={language === 'English' ? textCVHeaderEng.text : textCVHeaderRu.text}
       />
       <div className='u-flex-column'>
         <section>

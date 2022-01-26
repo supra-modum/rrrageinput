@@ -1,4 +1,5 @@
 import {
+  textAboutMe,
   textMainPageEng,
   textMainPageRu,
   textCVHeaderEng,
@@ -8,10 +9,11 @@ import {
 import { setLanguage, $language } from './language';
 
 export {
+  textAboutMe,
   textMainPageEng,
   textMainPageRu,
-  $language,
   textCVHeaderEng,
   textCVHeaderRu,
+  $language,
   setLanguage,
 };

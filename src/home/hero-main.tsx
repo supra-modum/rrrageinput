@@ -1,7 +1,12 @@
-import { useStore } from 'effector-react';
 import React from 'react';
+import { useStore } from 'effector-react';
 
-import { $language, textMainPageEng, textMainPageRu } from '../model';
+import {
+  textAboutMe,
+  $language,
+  textMainPageEng,
+  textMainPageRu,
+} from '../model';
 
 import './home-custom.scss';
 
@@ -17,12 +22,12 @@ const HeroMain: React.FC = () => {
               <div className='u-flex-column'>
                 <div className='u-flex-column'>
                   <h2 className='hero-main__heading white'>
-                    {textMainPageEng.t1}
+                    {textMainPageEng.text1}
                   </h2>
                 </div>
                 <div className='u-flex-column'>
                   <h2 className='hero-main__heading white'>
-                    {textMainPageEng.t2}
+                    {textAboutMe.text}
                   </h2>
                 </div>
               </div>
@@ -30,12 +35,12 @@ const HeroMain: React.FC = () => {
               <>
                 <div className='u-flex-column'>
                   <h2 className='hero-main__heading white'>
-                    {textMainPageRu.t1}
+                    {textMainPageRu.text1}
                   </h2>
                 </div>
                 <div className='u-flex-column'>
                   <h2 className='hero-main__heading white'>
-                    {textMainPageRu.t2}
+                    {textAboutMe.text}
                   </h2>
                 </div>
               </>
