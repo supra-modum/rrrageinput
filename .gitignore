@@ -138,6 +138,7 @@ node_modules
 workspace.code-workspace
 
 *.sublime*
+.idea
 
 psd
 thumb
