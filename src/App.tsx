@@ -4,17 +4,16 @@ import 'cirrus-ui';
 
 import { Home } from './home';
 import { ProjectsAndBlog } from './projects-blog';
+import { textMainPageEng } from './model';
 
 export const App: React.FC = () => {
   return (
-    <>
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/home'>
-          <Redirect to='/' />
-        </Route>
-        <Route exact path='/projects-blog' component={ProjectsAndBlog} />
-      </Switch>
-    </>
+    <div className='hero fullscreen bg-dark'>
+      <div className='hero-body'>
+        <div className='mx-auto'>
+          <h1 className='title white uppercase'>Хуй войне!</h1>
+        </div>
+      </div>
+    </div>
   );
 };
