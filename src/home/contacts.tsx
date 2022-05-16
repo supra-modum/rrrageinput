@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 import './home-custom.scss';
 
@@ -8,11 +8,7 @@ interface ContactsProps {
   contactRu: string;
 }
 
-const Contacts: React.FC<ContactsProps> = ({
-  language,
-  contactEng,
-  contactRu,
-}) => {
+const Contacts = ({ language, contactEng, contactRu }: ContactsProps) => {
   return (
     <div className='hero-contacts hero'>
       <div className='hero-body'>

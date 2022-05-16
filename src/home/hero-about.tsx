@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { SmallHeading } from '../ui';
 
 import './home-custom.scss';
@@ -10,13 +10,14 @@ interface HeroAboutProps {
   language: string;
   headingTextRu: string;
   headingTextEng: string;
+  children?: React.ReactNode;
 }
-const HeroAbout: React.FC<HeroAboutProps> = ({
+const HeroAbout = ({
   language,
   headingTextRu,
   headingTextEng,
   children,
-}) => {
+}: HeroAboutProps) => {
   return (
     <div className='hero-about hero bg-gray-000'>
       <div className='hero-body'>

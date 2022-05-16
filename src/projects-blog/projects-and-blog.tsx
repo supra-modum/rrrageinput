@@ -1,9 +1,9 @@
-import React from 'react';
+import * as React from 'react';
 import { Link } from 'react-router-dom';
 
 import 'cirrus-ui';
 
-export const ProjectsAndBlog: React.FC = () => {
+export const ProjectsAndBlog = () => {
   return (
     <div className='content u-center' style={{ height: '800px' }}>
       <div className='u-flex-column'>
@@ -13,7 +13,7 @@ export const ProjectsAndBlog: React.FC = () => {
       </div>
       <div className='u-flex u-flex-column u-align-center u-justify-center'>
         <h3 className='heading-4 u u-LR u-text-center'>
-          <Link to='/home' style={{ color: 'rgba(15,98,254)' }}>
+          <Link to='/' style={{ color: 'rgba(15,98,254)' }}>
             Home
           </Link>
         </h3>

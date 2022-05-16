@@ -1,11 +1,11 @@
-import React from 'react';
+import * as React from 'react';
 import { Tags, SmallHeading } from '../ui';
 import { textCVHeaderEng, textCVHeaderRu } from '../model';
 
 interface SkillsProps {
   language: string;
 }
-export const Skills: React.FC<SkillsProps> = ({ language }) => {
+export const Skills = ({ language }: SkillsProps) => {
   return (
     <div className='bg-gray-000'>
       <SmallHeading
@@ -18,7 +18,7 @@ export const Skills: React.FC<SkillsProps> = ({ language }) => {
               'JavaScript',
               'TypeScript',
               'React',
-              'Vue',
+              'Vue 3',
               'Node.js',
               'Electron.js',
               'Effector.js',

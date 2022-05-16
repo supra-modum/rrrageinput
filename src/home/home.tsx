@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import * as React from 'react';
+import { useEffect } from 'react';
 import { useStore } from 'effector-react';
 import 'cirrus-ui';
 
@@ -11,12 +12,17 @@ import {
   textMainPageRu,
 } from '../model';
 
-export const Home: React.FC = () => {
+import HeroMain from './hero-main';
+import HeroAbout from './hero-about';
+import Contacts from './contacts';
+
+export const Home = () => {
   const language = useStore($language);
 
-  const HeroMain = React.lazy(() => import('./hero-main'));
+  // TODO: read more about lazy loading in react 18
+  /*const HeroMain = React.lazy(() => import('./hero-main'));
   const HeroAbout = React.lazy(() => import('./hero-about'));
-  const Contacts = React.lazy(() => import('./contacts'));
+  const Contacts = React.lazy(() => import('./contacts'));*/
 
   useEffect(() => {
     const lang = JSON.parse(localStorage.getItem('language') || 'English');
@@ -38,6 +44,7 @@ export const Home: React.FC = () => {
         >
           <Skills language={language} />
         </HeroAbout>
+
         <div className='space large bg-gray-000' />
         <Contacts
           language={language}
