@@ -5,6 +5,7 @@ import { ParagraphLead } from './paragraph-lead';
 import { RenderLoader } from './render-loader';
 import { SmallHeading } from './small-heading';
 import { Tags } from './tags';
+import { Toast } from './toast';
 
 export {
   Footer,
@@ -14,4 +15,5 @@ export {
   RenderLoader,
   SmallHeading,
   Tags,
+  Toast,
 };

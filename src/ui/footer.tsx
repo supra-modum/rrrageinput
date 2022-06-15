@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <>
       <footer className='ui-custom-footer footer u-unselectable'>
-        <h6 className='footer__title white'>rrrageinput</h6>
+        <h6 className='footer__title text-white'>rrrageinput</h6>
         <div className='content'>
           <div className='divider' />
           <div className='row'>

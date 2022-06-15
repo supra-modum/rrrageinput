@@ -4,7 +4,7 @@ import { SmallHeading } from '../ui';
 import './home-custom.scss';
 
 //@ts-ignore
-import cv from 'url:../assets/cv.pdf';
+// import cv from 'url:../assets/cv.pdf';
 
 interface HeroAboutProps {
   language: string;
@@ -26,14 +26,14 @@ const HeroAbout = ({
             {language === 'English' ? (
               <>
                 <SmallHeading h2={headingTextEng} />
-                <a href={cv} target='_blank' className='cv-button btn'>
-                  Look at my CV
+                <a href="https://resume.io/r/rvFXjGM9N" target='_blank' className='btn btn-info m-0'>
+                  Check out my CV
                 </a>
               </>
             ) : (
               <>
                 <SmallHeading h2={headingTextRu} />
-                <a href={cv} target='_blank' className='cv-button btn'>
+                <a href="https://resume.io/r/rvFXjGM9N" target='_blank' className='btn btn-info m-0'>
                   Мое резюме
                 </a>
               </>
@@ -44,17 +44,18 @@ const HeroAbout = ({
               {language === 'English' ? (
                 <>
                   <p>
-                    I'm a Front End Developer currently based in Moscow, Russia.
-                    I have 1,5 years of experience as a developer.
+                    I'm a Front End Developer based in Tbilisi, Georgia.
+                    I have 1,5 years of experience as a developer ✨
                   </p>
                   <p>
                     I love working with React & TypeScript. I’m interested in
                     learning more about Vue.js and diving deeper into functional
-                    programming in JavaScript! <br /> Yes, I'm always passionate
-                    about learning new things ✨ 📘
+                    programming in JavaScript!
                   </p>
+                  <p>In my spare time I enjoy learning languages: 🇺🇦 🇪🇸 🇯🇵 🇫🇷</p>
+                  <p>Currently working at karpov.courses</p>
                   <p>
-                    Working at{' '}
+                    Previously worked at{' '}
                     <a
                       href='https://qvant.ru/'
                       target='_blank'
@@ -63,11 +64,11 @@ const HeroAbout = ({
                     >
                       Qvant/GPM Data
                     </a>{' '}
-                    as a <b>Front End Vue.js Developer</b>. I help building
+                    as a <b>Front End Vue.js Developer</b>. I helped building
                     modern interfaces for AdTech.
                   </p>
                   <p>
-                    Previously worked at{' '}
+                    I also have worked as <b>Full Stack Developer</b> at {' '}
                     <a
                       href='https://www.moysklad.ru/'
                       target='_blank'
@@ -75,23 +76,18 @@ const HeroAbout = ({
                       className='custom-link u u-LR'
                     >
                       МойСклад
-                    </a>{' '}
-                    as a <b>Full Stack Developer</b> with focus on Front End
-                    development. I was a part of the team responsible for
+                    </a>. I was a part of the team responsible for
                     developing POS software for small business.
                   </p>
                 </>
               ) : (
                 <>
                   <p>
-                    Я Front End разработчица из Москвы с опытом работы в
-                    индустрии 1,5+ года.
+                    Я Front End разработчица с опытом работы в индустрии 1,5+ года.
                   </p>
                   <p>
                     Я полностью самоучка, поэтому радость учиться новому всегда
-                    со мной.
-                    <br />
-                    Мои главные сильные качества — это любознательность и
+                    со мной. Мои главные сильные качества — это любознательность и
                     настойчивость, ведь я могу прийти на сложный стек (UI на
                     Scala 😱 ) и разобраться в нем.
                   </p>

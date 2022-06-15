@@ -5,7 +5,10 @@ import 'cirrus-ui';
 
 export const ProjectsAndBlog = () => {
   return (
-    <div className='content u-center' style={{ height: '800px' }}>
+    <div
+      className='content u-center'
+      style={{ height: '800px', flexFlow: 'column nowrap' }}
+    >
       <div className='u-flex-column'>
         <h2 className='headline-4 u-text-center'>
           Something nice will be there soon

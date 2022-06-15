@@ -21,12 +21,12 @@ const HeroMain: React.FC = () => {
             {language === 'English' ? (
               <div className='u-flex-column'>
                 <div className='u-flex-column'>
-                  <h2 className='hero-main__heading white'>
+                  <h2 className='hero-main__heading text-white'>
                     {textMainPageEng.text1}
                   </h2>
                 </div>
                 <div className='u-flex-column'>
-                  <h2 className='hero-main__heading white'>
+                  <h2 className='hero-main__heading text-white'>
                     {textAboutMe.text}
                   </h2>
                 </div>
@@ -34,12 +34,12 @@ const HeroMain: React.FC = () => {
             ) : (
               <>
                 <div className='u-flex-column'>
-                  <h2 className='hero-main__heading white'>
+                  <h2 className='hero-main__heading text-white'>
                     {textMainPageRu.text1}
                   </h2>
                 </div>
                 <div className='u-flex-column'>
-                  <h2 className='hero-main__heading white'>
+                  <h2 className='hero-main__heading text-white'>
                     {textAboutMe.text}
                   </h2>
                 </div>

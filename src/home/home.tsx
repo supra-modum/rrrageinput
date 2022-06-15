@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useStore } from 'effector-react';
 import 'cirrus-ui';
 
-import { Footer, Header } from '../ui';
+import { Footer, Header, Toast } from "../ui";
 import { Skills } from './skills';
 import {
   $language,
@@ -20,9 +20,11 @@ export const Home = () => {
   const language = useStore($language);
 
   // TODO: read more about lazy loading in react 18
-  /*const HeroMain = React.lazy(() => import('./hero-main'));
-  const HeroAbout = React.lazy(() => import('./hero-about'));
-  const Contacts = React.lazy(() => import('./contacts'));*/
+  /**
+   * const HeroMain = React.lazy(() => import('./hero-main'));
+   * const HeroAbout = React.lazy(() => import('./hero-about'));
+   *  const Contacts = React.lazy(() => import('./contacts'));
+   */
 
   useEffect(() => {
     const lang = JSON.parse(localStorage.getItem('language') || 'English');
@@ -34,7 +36,7 @@ export const Home = () => {
   return (
     <>
       <Header />
-      <main>
+      <main style={{position: "relative"}}>
         <HeroMain />
         <div className='space xlarge bg-gray-000' />
         <HeroAbout
