@@ -8,11 +8,11 @@ import { textMainPageEng } from './model';
 
 export const App: React.FC = () => {
   return (
-    <div className='hero fullscreen bg-dark'>
+    <div className='hero fullscreen bg-yellow-300'>
       <div className='hero-body'>
         <div className='mx-auto'>
-          <h1 className='title uppercase' style={{ color: 'white' }}>
-            Хуй войне!
+          <h1 className='title uppercase'>
+            <a href="https://savelife.in.ua/en/donate-en/" className='text-blue-600'>savelife.in.ua/donate</a>
           </h1>
         </div>
       </div>
